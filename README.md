@@ -1,6 +1,6 @@
 # Dymension-PRIVATEKEY-Converter
 
-# 1. Install roller binaries
+# 1. Dymension, ikili Dosyalarını Yükleyin.
 
 ```
 cd $HOME
@@ -10,8 +10,13 @@ cd $HOME
 curl -L https://dymensionxyz.github.io/roller/install.sh | bash
 ```
 
-# install GO
+# 2. GO'yu Yüklüyoruz.
+
+```
 cd $HOME
+```
+
+```
 ver="1.21.3"
 wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz"
 sudo rm -rf /usr/local/go
@@ -19,29 +24,47 @@ sudo tar -C /usr/local -xzf "go$ver.linux-amd64.tar.gz"
 rm "go$ver.linux-amd64.tar.gz"
 echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
 source $HOME/.bash_profile
+```
 
+# 3. Conventeri Yüklüyoruz.
+
+```
 cd $HOME
+```
+
+```
 git clone https://github.com/alphab-ai/pk_convert
+```
+Klasöre Giriyoruz.
+
+```
 cd pk_convert
+```
 
+Conventeri Çalıştırıyoruz.
+
+```
 go build -o pk_convert ./main.go
+```
 
-## 3. Convert privatekey
+## 3. Private Keyi Convert Edicez.
 
-### convert your saved hub_sequencer privatekey to correct format (json file)
+### hub_sequencer private keyini (json file)' dönüştüreceğiz.
 
+```
+HUB_SEQUENCER_PK="PRİVATEKEYİNİZİGİRİN"
+PASSWORD="ŞİFRENİZİGİRİN"
+```            
 
-# set var
-HUB_SEQUENCER_PK="your_privatekey"
-PASSWORD="12345678"                  # any password
-
+```
 cd $HOME/pk_convert
+```
 
+```
 ./pk_convert -pk $HUB_SEQUENCER_PK -password $PASSWORD >> $HOME/new_pk.json
+```
 
-
-import created json to dymd
-
+# 4. Oluşan Json'u Dymensiona Entegre Ediyoruz.
 
 # import to dymd (enter you password from above)
 dymd keys import wallet $HOME/new_pk.json --keyring-backend test

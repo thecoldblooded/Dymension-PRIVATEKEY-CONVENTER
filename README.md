@@ -1,1 +1,1 @@
-# Dymension-PR-VATEKEY-D-n-t-rme
+# Dymension-PRİVATEKEY-D-n-t-rme

@@ -1,4 +1,4 @@
-# Dymension-PRIVATEKEY-Converter
+# Dymension-PRIVKEY-CONVERT
 
 # SONUNA KADAR OKUYUN
 

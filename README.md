@@ -43,8 +43,6 @@ Klasöre Giriyoruz.
 cd pk_convert
 ```
 
-Conventeri Çalıştırıyoruz.
-
 ```
 go build -o pk_convert ./main.go
 ```

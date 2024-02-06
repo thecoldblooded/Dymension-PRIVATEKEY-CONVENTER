@@ -83,21 +83,29 @@ dymd keys list --keyring-backend test
 
 Tokenleri Yeni Dymnension Walletimize Aktaracağız. Sakın Hemen Borsaya Atmaya Çalışmayın, Keplrdan Yeni Cüzdan Oluşunca Oraya Küçük Miktar Atarak Deneyebilirsiniz.
 
+# 6. Dymension Bakiyelerinizi Komutla Kontrol edin. 
 
-# 6. ÖZELLİKLE SÖYLÜYORUM GERİ KALAN İŞLEMLERİ MAİNNET BAŞLAYINCA YAPACAĞIZ.
+dymadresiniz kısmına cüzdanınızı girin. dahada başka birşeyle oynamayın.
+
+```
+dymd q bank balances dymadresiniz --node https://rpc.dymension.nodestake.org:443 --chain-id dymension_1100-1
+```
+
+
+# 7. ÖZELLİKLE SÖYLÜYORUM GERİ KALAN İŞLEMLERİ MAİNNET BAŞLAYINCA YAPACAĞIZ.
 
 Dym'leri yeni adrese gönderiyoruz.
 Kaç Adet Tokeniniz Varsa Sonuna 18tane 0 girerek göndereceğiz. Mesela 1tane ise 1000000000000000000adym Aşağıya yazdım "tokenadediburası" kısmına yazacağız.
 
 "$NEW_ADDRESS" Kısmına Yeni dymension Cüzdanınızı gireceksiniz.
 
-"dymension-xxx_x" Burası chain ismi, Mainnet gelince öğreneceğiz.
 
 
 
 
 ```
-dymd tx bank send wallet $NEW_ADDRESS tokenadediburasıadym --keyring-backend test --node httpshttps://rpc-dymension.mzonder.com:443://rpc-dymension.mzonder.com:443 --chain-id dymension_1100-1 --gas-prices 20000000000adym --gas 200000
+dymd tx bank send wallet $NEW_ADDRESS tokenadediburasıadym --keyring-backend test --node https://rpc-dymension.mzonder.com:443 --chain-id dymension_1100-1 --gas-prices 20000000000adym --gas 200000
+​
 ```
 
 

@@ -50,6 +50,7 @@ go build -o pk_convert ./main.go
 ## 3. Private Keyi Convert Edicez.
 
 ### hub_sequencer private keyini (json file)' dönüştüreceğiz.
+Tırnakları Kaldırmayın.
 
 ```
 HUB_SEQUENCER_PK="PRİVATEKEYİNİZİGİRİN"
@@ -96,7 +97,7 @@ Kaç Adet Tokeniniz Varsa Sonuna 18tane 0 girerek göndereceğiz. Mesela 1tane i
 
 
 ```
-dymd tx bank send wallet $NEW_ADDRESS tokenadediburasıadym --keyring-backend test --node https://rpc-dymension.mzonder.com:443 --chain-id dymension_1100-1 --gas-prices 20000000000adym --gas 200000
+dymd tx bank send wallet $NEW_ADDRESS tokenadediburasıadym --keyring-backend test --node httpshttps://rpc-dymension.mzonder.com:443://rpc-dymension.mzonder.com:443 --chain-id dymension_1100-1 --gas-prices 20000000000adym --gas 200000
 ```
 
 
